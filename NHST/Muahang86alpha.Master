@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Muahang86alpha.master.cs" Inherits="NHST.Muahang86alpha" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" />
+    <meta name="keywords" />
+    <meta property="og:title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" />
+    <meta property="og:image" />
+    <meta property="og:site_name" />
+    <meta property="og:description" />
+    <title>Mua hàng 86 alpha</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="/App_Themes/Muahang86alpha/js/WOW-master/animate.css" />
+    <link rel="stylesheet" href="/App_Themes/Muahang86alpha/js/Magnific-Popup-master/magnific-popup.css" />
+    <link rel="stylesheet" href="/App_Themes/Muahang86alpha/js/Font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/App_Themes/Muahang86alpha/js/ms-Dropdown-master/css/msdropdown/dd.css">
+    <link rel="stylesheet" href="/App_Themes/Muahang86alpha/css/style.css" />
+    <link rel="stylesheet" href="/App_Themes/DPG/css/style.css" media="all" />
+    <link rel="stylesheet" href="/App_Themes/DPG/css/style-p.css" media="all" />
+    <link href="/App_Themes/DPG/css/select2.css" rel="stylesheet" />
+    <link href="/App_Themes/DPG/css/sweet-alert.css" rel="stylesheet" type="text/css" />
+    <script src="/App_Themes/DPG/js/jquery-1.9.1.min.js"></script>
+    <script src="/App_Themes/DPG/js/jquery.signalR-2.2.3.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="header">
+                <div class="header-top">
+                    <div class="container isner">
+                        <div class="header-top-left">
+                            <asp:Literal runat="server" ID="ltrHeaderLeft"></asp:Literal>
+                        </div>
+
+                        <div class="header-top-right">
+                            <asp:Literal runat="server" ID="ltrHeaderSocial"></asp:Literal>
+                            <div class="user-box">
+                                <asp:Literal runat="server" ID="ltrLogin"></asp:Literal>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="container isner">
+                        <div class="main-logo">
+                            <asp:Literal runat="server" ID="ltrLogo"></asp:Literal>
+
+                        </div>
+                        <div class="main-menu">
+                            <ul class="main-menu-nav">
+                                <asp:Literal runat="server" ID="ltrMenu"></asp:Literal>
+                            </ul>
+                            <div class="main-menu-overlay"></div>
+                        </div>
+                        <div class="hamburger-btn main-menu-btn">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="hotline">
+                            <asp:Literal runat="server" ID="ltrHeaderHotline"></asp:Literal>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer class="footer">
+            <div class="table-footer">
+                <div class="container">
+                    <div class="columns">
+                        <div class="colum">
+                            <div class="content-ft">
+                                <div class="logo-ft">
+                                    <asp:Literal runat="server" ID="ltrFooterLogo"></asp:Literal>
+                                </div>
+                                <p class="desc">
+                                    <%--Ghi chu--%>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="content-ft">
+                                <h5 class="title">Liên hệ
+                                </h5>
+                                <asp:Literal runat="server" ID="ltrFooterContacr"></asp:Literal>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="content-ft padd-l-50">
+                                <h5 class="title">Menu
+                                </h5>
+                                <ul class="list-ft">
+                                    <li>
+                                        <a href="/" class="hover-li">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="/chuyen-muc/gioi-thieu" class="hover-li">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="/" class="hover-li">Công cụ đặt hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="/chuyen-muc/huong-dan" class="hover-li">Hướng dẫn</a>
+                                    </li>
+                                    <li>
+                                        <a href="/chuyen-muc/chinh-sach" class="hover-li">Chính sách</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="content-ft">
+                                <h5 class="title">Mạng xã hội
+                                </h5>
+                                <asp:Literal runat="server" ID="ltrSocialFooter"></asp:Literal>
+                                <div class="box-fanpage">
+                                    <div class="box-img">
+                                        <img src="App_Themes/Muahang86alpha/images/fanpage.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                © Copyright Muahang86alpha
+            </div>
+        </footer>
+        <div class="m-backtotop" aria-hidden="true">
+            <div class="arrow">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+                Back to top
+            </div>
+        </div>
+        <script src="App_Themes/Muahang86alpha/js/jquery-3.4.1.min.js"></script>
+        <script src="App_Themes/Muahang86alpha/js/WOW-master/wow.min.js"></script>
+        <script src="App_Themes/Muahang86alpha/js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
+        <script src="App_Themes/Muahang86alpha/js/ms-Dropdown-master/js/msdropdown/jquery.dd.min.js"></script>
+        <script src="App_Themes/Muahang86alpha/js/main.js"></script>
+        <script>
+            new WOW().init();
+            $("#brand-source").msDropdown();
+        </script>
+    </form>
+</body>
+</html>

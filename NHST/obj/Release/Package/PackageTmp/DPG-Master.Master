@@ -1,0 +1,274 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DPG-Master.master.cs" Inherits="NHST.DPG_Master" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" />
+    <meta name="keywords" />
+    <meta property="og:title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" />
+    <meta property="og:image" />
+    <meta property="og:site_name" />
+    <meta property="og:description" />
+    <title>Yến Phát China</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="/App_Themes/DPG/js/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="/App_Themes/DPG/css/style.css" media="all" />
+    <link rel="stylesheet" href="/App_Themes/DPG/css/style-p.css" media="all" />
+    <link rel="stylesheet" href="/App_Themes/DPG/css/responsive.css" media="all" />
+    <link href="/App_Themes/DPG/css/select2.css" rel="stylesheet" />
+    <link href="/App_Themes/DPG/css/sweet-alert.css" rel="stylesheet" type="text/css" />
+    <script src="/App_Themes/DPG/js/jquery-1.9.1.min.js"></script>
+    <script src="/App_Themes/DPG/js/jquery.signalR-2.2.3.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header id="header" style="clear: both;">
+            <div class="hd-top">
+                <div class="all">
+                    <div class="hdt-wrap">
+                        <asp:Literal runat="server" ID="ltrHeaderLeft"></asp:Literal>
+                        <div class="hdt__right">
+                            <asp:Literal runat="server" ID="ltrLogin"></asp:Literal>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hd-main">
+                <div class="all">
+                    <div class="hdm-wrap">
+                        <div class="logo">
+                            <asp:Literal runat="server" ID="ltrLogo"></asp:Literal>
+                        </div>
+                        <div class="hdm__right">
+                            <div class="navbar-toggle">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </div>
+                            <div class="nav-wrap">
+                                <div class="nav-overlay"></div>
+                                <ul class="nav-ul clear">
+                                    <asp:Literal runat="server" ID="ltrMenu"></asp:Literal>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer id="footer">
+            <div class="ft-infos">
+                <div class="all">
+                    <div class="info__child logo">
+                        <div class="img" style="width: 50%;">
+                            <a href="/">
+                                <img src="/App_Themes/DPG/images/logo-ft.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="info__child">
+                        <div class="title">
+                            <h3>Công ty</h3>
+                        </div>
+                        <ul class="list-nav">
+                            <li><a href="">Về chúng tôi</a></li>
+                            <li><a href="">Điều khoản</a></li>
+                        </ul>
+                    </div>
+                    <div class="info__child">
+                        <div class="title">
+                            <h3>Ngành hàng</h3>
+                        </div>
+                        <ul class="list-nav">
+                            <li><a href="">Thời trang nữ</a></li>
+                            <li><a href="">Thời trang nam</a></li>
+                            <li><a href="">Đồ dùng trẻ em</a></li>
+                            <li><a href="">Đồ phượt</a></li>
+                            <li><a href="">Nội thất</a></li>
+                        </ul>
+                    </div>
+                    <div class="info__child">
+                        <div class="title">
+                            <h3>Hỗ trợ</h3>
+                        </div>
+                        <ul class="list-nav">
+                            <li><a href="">Hướng dẫn</a></li>
+                            <li><a href="">Nạp tiền</a></li>
+                            <li><a href="">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                    <div class="info__child">
+                        <div class="title">
+                            <h3>Mạng xã hội</h3>
+                        </div>
+                        <div class="social-icon">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FyenphatChina&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="331" style="border: none; overflow: hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-sys">
+                <div class="all center-txt">
+                    &copy; Bản quyền thuộc về Yến Phát China
+                </div>
+            </div>
+        </footer>
+        <a href="javascript:;" class="scroll-top-link" id="scroll-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <script src="/App_Themes/DPG/js/sweet/sweet-alert.js" type="text/javascript"></script>
+        <script src="/App_Themes/DPG/js/select2/select2.min.js"></script>
+        <script src="/App_Themes/DPG/js/slick/slick.min.js"></script>
+        <script src="/App_Themes/DPG/js/master.js"></script>
+        <script async="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_roqaeKE7ULRUNw5wG0i8TqvWRsSJ2JY&amp;callback=loadGoogleMap"></script>
+        <script>
+            jQuery(document).ready(function () {
+                ////////slider
+                $('.banner-slider').slick({
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    // autoplay: true,
+                    // autoplaySpeed: 3000,
+                    dots: false,
+                    prevArrow: "<button type='button' class='slick-prev pull-left'><div class=\"slick-icon\"><a role=\"button\"><i class=\"fa fa-chevron-left\"></i></a></div></button>",
+                    nextArrow: "<button type='button' class='slick-next pull-right'><div class=\"slick-icon\"><a role=\"button\"><i class=\"fa fa-chevron-right\"></i></a></div></button>",
+                });
+
+                var total_slide = parseInt($('.slick-slide:not(.slick-cloned)').length);
+                $('.banner .slick-button .total-num').text(total_slide);
+
+                function getindex() {
+                    var slick_index = $('.banner-slider .slick-current').attr('data-slick-index');
+                    var current_num = parseInt(slick_index) + 1;
+                    $('.banner .slick-button .current-num').text(current_num);
+                }
+
+                $('.banner .slick-button .prev').click(function () {
+                    $(".banner-slider").slick('slickPrev');
+                    getindex();
+                });
+                $('.banner .slick-button .next').click(function () {
+                    $(".banner-slider").slick('slickNext');
+                    getindex();
+                });
+
+                //////////tab
+                var step_tab = $('.steps-order .step__item.active').attr('step-nav');
+                $(`.steps-order .step-content${step_tab}`).show().siblings().hide();
+                $('.steps-order .step__item .it-wrap').on('click', function (e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    $(this).parents('.step__item').addClass('active').siblings().removeClass('active');
+                    var navct = $(this).parents('.step__item').attr('step-nav');
+                    $(`.steps-order .step-content${navct}`).fadeIn().siblings().hide();
+                })
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                LoadSelect();
+                setActiveMenu(window.location.pathname);
+            });
+            function LoadSelect() {
+                $(".select2").select2({});
+                setActive();
+            }
+            function setActive() {
+                $('body').addClass('child-page');
+            }
+            function setActiveMenu(path) {
+                if (path.toLowerCase().indexOf('/trang-chu') != -1) {
+                    $('.nav-ul li.trangchu').addClass("current");
+                }
+                else if (path.toLowerCase().indexOf('/chuyen-muc/bao-gia') != -1) {
+                    $('.nav-ul li.baogia').addClass("current");
+                }
+                else if (path.toLowerCase().indexOf('/chuyen-muc/chinh-sach') != -1) {
+                    $('.nav-ul li.chinhsach').addClass("current");
+                }
+                else if (path.toLowerCase().indexOf('/chuyen-muc/gioi-thieu') != -1) {
+                    $('.nav-ul li.gioithieu').addClass("current");
+                }
+                else if (path.toLowerCase().indexOf('/chuyen-muc/huong-dan') != -1) {
+                    $('.nav-ul li.huongdan').addClass("current");
+                }
+                else if (path.toLowerCase().indexOf('/chuyen-muc/tin-tuc') != -1) {
+                    $('.nav-ul li.tintuc').addClass("current");
+                }
+                else if (path.toLowerCase().indexOf('/chuyen-muc/tuyen-dung') != -1) {
+                    $('.nav-ul li.tuyendung').addClass("current");
+                }
+                else if (path.toLowerCase().indexOf('/dat-hang-nhanh') != -1) {
+                    $('.nav-ul li.congcu').addClass("current");
+                }
+                else if (path.toLowerCase().indexOf('/thong-tin-thanh-toan') != -1) {
+                    $('.nav-ul li.ttthanhtoan').addClass("current");
+                }
+            }
+            function OnClientFileSelected(sender, args) {
+                if ($telerik.isIE) return;
+                else {
+                    truncateName(args);
+                    //var file = args.get_fileInputField().files.item(args.get_rowIndex());
+                    var file = args.get_fileInputField().files.item(0);
+                    showThumbnail(file, args);
+                }
+            }
+            function truncateName(args) {
+                var $span = $(".ruUploadProgress", args.get_row());
+                var text = $span.text();
+                if (text.length > 23) {
+                    var newString = text.substring(0, 23) + '...';
+                    $span.text(newString);
+                }
+            }
+            function showThumbnail(file, args) {
+
+                var image = document.createElement("img");
+
+                image.file = file;
+                image.className = "ab img-responsive";
+
+                var $row = $(args.get_row());
+                $row.parent().className = "row ruInputs list-unstyled";
+                $row.append(image);
+
+                var reader = new FileReader();
+                reader.onload = (function (aImg) {
+                    return function (e) {
+                        aImg.src = e.target.result;
+                    };
+                }(image));
+                var ret = reader.readAsDataURL(file);
+                var canvas = document.createElement("canvas");
+
+                ctx = canvas.getContext("2d");
+                image.onload = function () {
+                    ctx.drawImage(image, 100, 100);
+                };
+
+            }
+            $('ul#pri-menu > li > a').click(function (e) {
+                e.preventDefault();
+                var target = $(this).data('href');
+                if (target !== undefined) {
+                    $("body,html").animate({ scrollTop: $(target).offset().top }, 500);
+                } else {
+                    location.href = $(this).attr('href');
+                }
+            });
+        </script>
+    </form>
+</body>
+</html>
